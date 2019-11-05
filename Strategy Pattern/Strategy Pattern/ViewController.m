@@ -40,7 +40,7 @@
     LoginInputTextField *loginField = (LoginInputTextField *)textField;
     
     if ([loginField validate] == NO) {
-        NSLog(@"输入的手机号或者邮箱无效,此处暂不做详细判断了 - %@",loginField.inputValidator.errorMsg);
+        NSLog(@"%@",loginField.inputValidator.errorMsg);
     }
 }
 
