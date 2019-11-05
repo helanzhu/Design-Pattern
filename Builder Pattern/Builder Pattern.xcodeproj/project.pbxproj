@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79ABF4DB23706C9B0033F2E7 /* BMWBuider.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ABF4DA23706C9B0033F2E7 /* BMWBuider.m */; };
 		79F22F17236C2BD700E4B03A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F22F16236C2BD700E4B03A /* AppDelegate.m */; };
 		79F22F1A236C2BD700E4B03A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F22F19236C2BD700E4B03A /* SceneDelegate.m */; };
 		79F22F1D236C2BD700E4B03A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F22F1C236C2BD700E4B03A /* ViewController.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79ABF4D923706C9B0033F2E7 /* BMWBuider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BMWBuider.h; sourceTree = "<group>"; };
+		79ABF4DA23706C9B0033F2E7 /* BMWBuider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BMWBuider.m; sourceTree = "<group>"; };
 		79F22F12236C2BD700E4B03A /* Builder Pattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Builder Pattern.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F22F15236C2BD700E4B03A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		79F22F16236C2BD700E4B03A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -168,6 +171,8 @@
 				79F22F51236C321400E4B03A /* CarBuilder.m */,
 				79F22F53236C340000E4B03A /* AudiBuilder.h */,
 				79F22F54236C340000E4B03A /* AudiBuilder.m */,
+				79ABF4D923706C9B0033F2E7 /* BMWBuider.h */,
+				79ABF4DA23706C9B0033F2E7 /* BMWBuider.m */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				79F22F1D236C2BD700E4B03A /* ViewController.m in Sources */,
 				79F22F58236C34CF00E4B03A /* CarDirector.m in Sources */,
 				79F22F55236C340000E4B03A /* AudiBuilder.m in Sources */,
+				79ABF4DB23706C9B0033F2E7 /* BMWBuider.m in Sources */,
 				79F22F52236C321400E4B03A /* CarBuilder.m in Sources */,
 				79F22F17236C2BD700E4B03A /* AppDelegate.m in Sources */,
 				79F22F28236C2BE400E4B03A /* main.m in Sources */,

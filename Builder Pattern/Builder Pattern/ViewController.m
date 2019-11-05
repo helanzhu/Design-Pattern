@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "CarDirector.h"
 #import "AudiBuilder.h"
+#import "BMWBuider.h"
 
 @interface ViewController ()
 
@@ -24,6 +25,11 @@
     AudiBuilder *builder = [[AudiBuilder alloc] init];
     Car *car = [director assemblingCarWithBuilder:builder];
     NSLog(@"engine = %@\n wheel = %@\n shell = %@",car.engine,car.wheel,car.shell);
+    
+    CarDirector *bmwDirector = [[CarDirector alloc] init];
+    BMWBuider *bmwBuilder = [[BMWBuider alloc] init];
+    Car *bmwCar = [bmwDirector assemblingCarWithBuilder:bmwBuilder];
+    NSLog(@"engine = %@\n wheel = %@\n shell = %@",bmwCar.engine,bmwCar.wheel,bmwCar.shell);
     
 }
 

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W59-dH-fmA" customClass="LoginInputTextField">
+                                <rect key="frame" x="107" y="204" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="eqi-LD-hvv"/>
+                                    <constraint firstAttribute="height" constant="50" id="vTE-C9-DPt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入邮箱" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ver-4g-07q" customClass="LoginInputTextField">
+                                <rect key="frame" x="107" y="304" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="BhW-yD-z3I"/>
+                                    <constraint firstAttribute="height" constant="50" id="G2x-r7-6QZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khb-Bt-qZu">
+                                <rect key="frame" x="107" y="404" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="确认登录">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bRr-mG-UGf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="khb-Bt-qZu" firstAttribute="top" secondItem="ver-4g-07q" secondAttribute="bottom" constant="50" id="7qa-SI-Zn3"/>
+                            <constraint firstItem="ver-4g-07q" firstAttribute="top" secondItem="W59-dH-fmA" secondAttribute="bottom" constant="50" id="Bsb-yr-caN"/>
+                            <constraint firstItem="ver-4g-07q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E9i-89-45v"/>
+                            <constraint firstItem="khb-Bt-qZu" firstAttribute="height" secondItem="ver-4g-07q" secondAttribute="height" id="N2j-Ha-x8R"/>
+                            <constraint firstItem="W59-dH-fmA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="O5u-FU-XYL"/>
+                            <constraint firstItem="W59-dH-fmA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TT0-uw-t3Y"/>
+                            <constraint firstItem="khb-Bt-qZu" firstAttribute="trailing" secondItem="ver-4g-07q" secondAttribute="trailing" id="bPi-Mt-TW4"/>
+                            <constraint firstItem="khb-Bt-qZu" firstAttribute="leading" secondItem="ver-4g-07q" secondAttribute="leading" id="l6G-fE-56v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="ver-4g-07q" id="Zhz-SN-8QX"/>
+                        <outlet property="phoneNumTextField" destination="W59-dH-fmA" id="e84-v0-Rdw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+</document>
